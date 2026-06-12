@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JS PROPIO-->
+    <script defer src="./assets/js/transactions.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Wallet Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./deposit.html">Deposito</a>
+                    <a class="nav-link" href="./sendmoney.html">Transferir</a>
+                    <a class="nav-link active" aria-current="page" href="./transactions.html">Transacciones</a>
+                    <a class="nav-link" href="./login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ENCABEZADO -->
+    <header class="py-5">
+        <h1 class="text-primary text-capitalize text-center">Historial de transacciones</h1>
+        <h2 class="text-capitalize text-center">Balance cuenta: $ <span id="balance">0</span> </h2>
+    </header>
+
+    <main class="container">
+
+        <section>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-7 col-md-6 col-lg-5">
+                    <ul class="list-group" id="listaTransacciones">
+
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
