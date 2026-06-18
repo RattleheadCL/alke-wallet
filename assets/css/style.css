@@ -9,3 +9,24 @@
 .sin-flechas {
     -moz-appearance: textfield;
 }
+#Cuerpo-pagina
+{
+    background:linear-gradient(145deg, #ff6b6b, #6a4c93, #4ecdc4); 
+    animation: gradientMove 10s ease infinite;
+    
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#Cuerpo-pagina {
+    flex: 1;
+}
+#foto-ref {
+    justify-content: center;
+}
